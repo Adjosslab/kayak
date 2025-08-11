@@ -1,0 +1,8 @@
+local v1 = require(game:GetService("ReplicatedStorage").Modules.Common)
+local selectedTrain = vip -- ganti sesuai nomor training kamu
+
+while task.wait() do
+    for i = 1, 100 do
+        v1.Events.Train:Fire(true, "Power", selectedTrain)
+    end
+end
